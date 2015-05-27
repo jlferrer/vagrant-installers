@@ -69,8 +69,9 @@ pkgbuild \
     --install-location "/opt/vagrant" \
     --scripts ${STAGING_DIR}/scripts \
     --timestamp=none \
-    --sign "Developer ID Installer: Mitchell Hashimoto" \
     ${STAGING_DIR}/core.pkg
+    #--sign "Developer ID Installer: Mitchell Hashimoto" \
+    #${STAGING_DIR}/core.pkg
 
 # Create the distribution definition, an XML file that describes what
 # the installer will look and feel like.
@@ -114,8 +115,9 @@ productbuild \
     --resources ${STAGING_DIR}/resources \
     --package-path ${STAGING_DIR} \
     --timestamp=none \
-    --sign "Developer ID Installer: Mitchell Hashimoto" \
     ${STAGING_DIR}/Vagrant.pkg
+    #--sign "Developer ID Installer: Mitchell Hashimoto" \
+    #${STAGING_DIR}/Vagrant.pkg
 
 #-------------------------------------------------------------------------
 # DMG
